@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/book_detail_menu"
+        android:orderInCategory="0"
+        android:title="@string/app_book"/>
+    <item
+        android:id="@+id/book_browse_menu"
+        android:orderInCategory="1"
+        android:title="@string/app_books"/>
+    <item
+        android:id="@+id/sign_in_menu"
+        android:orderInCategory="2"
+        android:title="@string/app_sign_in"/>
+    <item
+        android:id="@+id/sign_up_menu"
+        android:orderInCategory="3"
+        android:title="@string/app_sign_up"/>
+    <item
+        android:id="@+id/place_detail_menu"
+        android:orderInCategory="4"
+        android:title="@string/app_place"/>
+    <item
+        android:id="@+id/place_browse_menu"
+        android:orderInCategory="5"
+        android:title="@string/app_places"/>
+    <item
+        android:id="@+id/character_browse_menu"
+        android:orderInCategory="6"
+        android:title="@string/app_characters"/>
+    <item
+        android:id="@+id/character_detail_menu"
+        android:orderInCategory="7"
+        android:title="@string/app_character"/>
+    <item
+        android:id="@+id/event_detail_menu"
+        android:orderInCategory="8"
+        android:title="@string/app_event"/>
+    <item
+        android:id="@+id/event_browse_menu"
+        android:orderInCategory="9"
+        android:title="@string/app_events"/>
+    <item
+        android:id="@+id/profile_detail_menu"
+        android:orderInCategory="10"
+        android:title="@string/app_profile"/>
+    <item
+        android:id="@+id/profile_browse_menu"
+        android:orderInCategory="11"
+        android:title="@string/app_profiles"/>
+    <item android:id="@+id/action_search"
+        android:orderInCategory="5"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
 </menu>

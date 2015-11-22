@@ -3,7 +3,7 @@ package com.app.dadrix.yggdrasilbookapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class EventDetailActivity extends AppCompatActivity {
+public class EventDetailActivity extends YggdrasilBookActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

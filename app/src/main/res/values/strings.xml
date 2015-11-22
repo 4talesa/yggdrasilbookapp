@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">YggdrasilBookApp</string>
     <string name="app_title">Yggdrasil</string>
+    <string name="app_book">Book</string>
+    <string name="app_books">Books</string>
+    <string name="app_sign_in">Sign In</string>
+    <string name="app_sign_up">Sign Up</string>
+    <string name="app_place">Place</string>
+    <string name="app_places">Places</string>
+    <string name="app_characters">Characters</string>
+    <string name="app_character">character</string>
+    <string name="app_event">Event</string>
+    <string name="app_events">Events</string>
+    <string name="app_profile">Profile</string>
+    <string name="app_profiles">Profiles</string>
 </resources>

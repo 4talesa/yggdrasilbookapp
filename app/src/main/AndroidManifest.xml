@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_title"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -15,18 +15,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BookBrowseActivity" />
-        <activity android:name=".BookDetailActivity" />
-        <activity android:name=".CharacterBrowseActivity" />
-        <activity android:name=".CharacterDetailActivity" />
-        <activity android:name=".PlaceBrowseActivity" />
-        <activity android:name=".PlaceDetailActivity" />
-        <activity android:name=".EventBrowseActivity" />
-        <activity android:name=".EventDetailActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".ProfileDetailActivity" />
-        <activity android:name=".ProfileBrowseActivity"></activity>
+        <activity
+            android:name=".BookBrowseActivity"
+            android:label="@string/app_books"/>
+        <activity
+            android:name=".BookDetailActivity"
+            android:label="@string/app_book"/>
+        <activity
+            android:name=".CharacterBrowseActivity"
+            android:label="@string/app_characters"/>
+        <activity
+            android:name=".CharacterDetailActivity"
+            android:label="@string/app_character"/>
+        <activity
+            android:name=".PlaceBrowseActivity"
+            android:label="@string/app_places"/>
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:label="@string/app_place"/>
+        <activity
+            android:name=".EventBrowseActivity"
+            android:label="@string/app_events"/>
+        <activity
+            android:name=".EventDetailActivity"
+            android:label="@string/app_event"/>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/app_sign_in"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/app_sign_up"/>
+        <activity
+            android:name=".ProfileBrowseActivity"
+            android:label="@string/app_profiles"/>
+        <activity
+            android:name=".ProfileDetailActivity"
+            android:label="@string/app_profile"/>
     </application>
 
 </manifest>
