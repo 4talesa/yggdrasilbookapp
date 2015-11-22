@@ -7,10 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.app.dadrix.yggdrasilbookapp.MainActivity">
+    tools:context="com.app.dadrix.yggdrasilbookapp.MainActivity"
+    style="@style/linearLayoutDark">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        style="@style/largeLabelDark"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/app_title" />
 </RelativeLayout>

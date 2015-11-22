@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#ffa700</color>
+    <color name="colorPrimaryDark">#ffa700</color>
+    <color name="colorAccent">#fafafa</color>
+    <color name="textColorPrimary_Enabled">#fafafa</color>
+    <color name="textColorPrimary_Disabled">#adadad</color>
+    <color name="colorLabelLight">#000000</color>
+    <color name="colorLabelLight_Disabled">#adadad</color>
+    <color name="colorLabelLight_Highlight">#1352e2</color>
+    <color name="colorLabelDark">#FFFFFF</color>
+    <color name="colorBackgroundLight">#FFFFFF</color>
+    <color name="colorBackgroundDark">#ffa700</color>
+    <color name="colorFacebookBackground">#3e5a92</color>
+    <color name="colorFacebookText">#FFFFFF</color>
+    <color name="colorRewardsTitle">#22c064</color>
+    <color name="colorRewardsMsg">#adadad</color>
+    <color name="colorLabelButtonReward">#FFFFFF</color>
+    <color name="colorLabelBackgroundButtonReward">#22c064</color>
+    <color name="colorBackgroundShadow">#adadad</color>
+    <color name="colorBackgroundDisabled">#e0e0e0</color>
 </resources>

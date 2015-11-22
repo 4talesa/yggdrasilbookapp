@@ -6,6 +6,223 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textColorPrimary_Enabled</item>
+    </style>
+
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linearLayoutLight">
+        <item name="android:layout_width">@dimen/button_small_width</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="linearLayoutDark">
+        <item name="android:layout_width">@dimen/button_small_width</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:background">@color/colorBackgroundDark</item>
+    </style>
+
+    <style name="linearLayoutDisabled">
+        <item name="android:layout_width">@dimen/button_small_width</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:background">@color/colorBackgroundDisabled</item>
+    </style>
+
+    <style name="linearLayoutSplliter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/splitter_height</item>
+        <item name="android:background">@color/colorBackgroundDisabled</item>
+    </style>
+
+    <style name="smallButton">
+        <item name="android:layout_width">@dimen/button_small_width</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:textSize">@dimen/label_size_small</item>
+    </style>
+
+    <style name="mediumButton">
+        <item name="android:layout_width">@dimen/button_medium_width</item>
+        <item name="android:layout_height">@dimen/button_medium_height</item>
+        <item name="android:textSize">@dimen/label_size_small</item>
+    </style>
+
+    <style name="largeButton">
+        <item name="android:layout_width">@dimen/button_large_width</item>
+        <item name="android:layout_height">@dimen/button_large_height</item>
+        <item name="android:textSize">@dimen/label_size_small</item>
+    </style>
+
+    <style name="smallButtonLight" parent="smallButton">
+        <item name="android:textColor">@color/colorLabelLight</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="mediumButtonLight" parent="mediumButton">
+        <item name="android:textColor">@color/colorLabelLight</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="largeButtonLight" parent="largeButton">
+        <item name="android:textColor">@color/colorLabelLight</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="smallButtonDark" parent="smallButton">
+        <item name="android:textColor">@color/colorLabelDark</item>
+        <item name="android:background">@color/colorBackgroundDark</item>
+    </style>
+
+    <style name="mediumButtonDark" parent="mediumButton">
+        <item name="android:textColor">@color/colorLabelDark</item>
+        <item name="android:background">@color/colorBackgroundDark</item>
+    </style>
+
+    <style name="largeButtonDark" parent="largeButton">
+        <item name="android:textColor">@color/colorLabelDark</item>
+        <item name="android:background">@color/colorBackgroundDark</item>
+    </style>
+
+    <style name="largeButtonFacebook" parent="largeButton">
+        <item name="android:textColor">@color/colorFacebookText</item>
+        <item name="android:background">@color/colorFacebookBackground</item>
+    </style>
+
+    <style name="largeButtonReward" parent="largeButton">
+        <item name="android:textColor">@color/colorLabelButtonReward</item>
+        <item name="android:background">@color/colorLabelBackgroundButtonReward</item>
+    </style>
+
+    <style name="smallLabel">
+        <item name="android:textSize">@dimen/label_size_small</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="mediumLabel">
+        <item name="android:textSize">@dimen/label_size_medium</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="largeLabel">
+        <item name="android:textSize">@dimen/label_size_large</item>
+        <item name="android:layout_height">@dimen/button_small_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="smallLabelLight" parent="smallLabel">
+        <item name="android:textColor">@color/colorLabelLight</item>
+    </style>
+
+    <style name="smallLabelDark" parent="smallLabel">
+        <item name="android:textColor">@color/colorLabelDark</item>
+    </style>
+
+    <style name="smallLabelReward" parent="smallLabel">
+        <item name="android:textColor">@color/colorRewardsTitle</item>
+    </style>
+
+    <style name="smallLabelDisabled" parent="smallLabel">
+        <item name="android:textColor">@color/colorLabelLight_Disabled</item>
+    </style>
+
+    <style name="smallLabelHighlight" parent="smallLabel">
+        <item name="android:textColor">@color/colorLabelLight_Highlight</item>
+    </style>
+
+    <style name="mediumLabelLight" parent="mediumLabel">
+        <item name="android:textColor">@color/colorLabelLight</item>
+    </style>
+
+    <style name="mediumLabelDark" parent="mediumLabel">
+        <item name="android:textColor">@color/colorLabelDark</item>
+    </style>
+
+    <style name="mediumLabelReward" parent="mediumLabel">
+        <item name="android:textColor">@color/colorRewardsTitle</item>
+    </style>
+
+    <style name="mediumLabelDisabled" parent="mediumLabel">
+        <item name="android:textColor">@color/colorLabelLight_Disabled</item>
+    </style>
+
+    <style name="mediumLabelHighlight" parent="mediumLabel">
+        <item name="android:textColor">@color/colorLabelLight_Highlight</item>
+    </style>
+
+    <style name="largeLabelLight" parent="largeLabel">
+        <item name="android:textColor">@color/colorLabelLight</item>
+    </style>
+
+    <style name="largeLabelDark" parent="largeLabel">
+        <item name="android:textColor">@color/colorLabelDark</item>
+    </style>
+
+    <style name="largeLabelReward" parent="largeLabel">
+        <item name="android:textColor">@color/colorRewardsTitle</item>
+    </style>
+
+    <style name="largeLabelDisabled" parent="largeLabel">
+        <item name="android:textColor">@color/colorLabelLight_Disabled</item>
+    </style>
+
+    <style name="largeLabelHighlight" parent="largeLabel">
+        <item name="android:textColor">@color/colorLabelLight_Highlight</item>
+    </style>
+
+    <style name="pictureThumb">
+        <item name="android:layout_width">@dimen/product_preview_thumb_width</item>
+        <item name="android:layout_height">@dimen/product_preview_thumb_height</item>
+        <item name="android:scaleType">fitCenter</item>
+        <!--<item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>-->
+    </style>
+
+    <style name="pictureRegular">
+        <item name="android:layout_width">@dimen/product_preview_width</item>
+        <item name="android:layout_height">@dimen/product_preview_height</item>
+        <item name="android:scaleType">fitCenter</item>
+        <!--<item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>-->
+    </style>
+
+    <style name="headerTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/header_title_height</item>
+    </style>
+
+    <style name="headerSpecial">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/header_special_height</item>
+    </style>
+
+    <style name="arrowButton">
+        <item name="android:layout_width">@dimen/arrow_button_width</item>
+        <item name="android:layout_height">@dimen/arrow_button_height</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:background">@color/colorBackgroundLight</item>
     </style>
 
 </resources>

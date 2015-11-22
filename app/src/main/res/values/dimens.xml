@@ -1,5 +1,34 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="label_size_small">16dp</dimen>
+    <dimen name="label_size_medium">24dp</dimen>
+    <dimen name="label_size_large">46dp</dimen>
+    <dimen name="label_margin_small">5dp</dimen>
+    <dimen name="label_margin_medium">16dp</dimen>
+    <dimen name="label_margin_big">24dp</dimen>
+    <dimen name="product_preview_thumb_width">95dp</dimen>
+    <dimen name="product_preview_thumb_height">95dp</dimen>
+    <dimen name="product_preview_width">175dp</dimen>
+    <dimen name="product_preview_height">175dp</dimen>
+    <dimen name="arrow_button_width">35dp</dimen>
+    <dimen name="arrow_button_height">175dp</dimen>
+    <dimen name="product_browse_desc_width">135dp</dimen>
+    <dimen name="product_browse_desc_height">95dp</dimen>
+    <dimen name="product_preview_desc_width">115dp</dimen>
+    <dimen name="product_preview_desc_height">135dp</dimen>
+    <dimen name="product_preview_amount_width">145dp</dimen>
+    <dimen name="product_preview_amount_height">135dp</dimen>
+    <dimen name="store_preview_thumb_height">225dp</dimen>
+    <dimen name="store_preview_desc_height">65dp</dimen>
+    <dimen name="header_title_height">75dp</dimen>
+    <dimen name="header_special_height">145dp</dimen>
+    <dimen name="button_small_width">30dp</dimen>
+    <dimen name="button_medium_width">175dp</dimen>
+    <dimen name="button_large_width">225dp</dimen>
+    <dimen name="button_small_height">45dp</dimen>
+    <dimen name="button_medium_height">45dp</dimen>
+    <dimen name="button_large_height">45dp</dimen>
+    <dimen name="splitter_height">15dp</dimen>
 </resources>
