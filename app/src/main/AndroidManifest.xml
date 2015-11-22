@@ -15,6 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BookBrowseActivity" />
+        <activity android:name=".BookDetailActivity" />
+        <activity android:name=".CharacterBrowseActivity" />
+        <activity android:name=".CharacterDetailActivity" />
+        <activity android:name=".PlaceBrowseActivity" />
+        <activity android:name=".PlaceDetailActivity" />
+        <activity android:name=".EventBrowseActivity" />
+        <activity android:name=".EventDetailActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ProfileDetailActivity" />
+        <activity android:name=".ProfileBrowseActivity"></activity>
     </application>
 
 </manifest>
