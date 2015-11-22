@@ -10,4 +10,105 @@
     tools:context="com.app.dadrix.yggdrasilbookapp.CharacterDetailActivity"
     style="@style/linearLayoutLight">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    style="@style/arrowButton"
+                    android:id="@+id/buttonProductDetailArrowLeft"
+                    android:gravity="left|center"
+                    android:src="@drawable/arrow_left"/>
+                <ImageView
+                    style="@style/pictureRegular"
+                    android:id="@+id/imageViewProductDetail"
+                    android:gravity="center"
+                    android:src="@drawable/character_cover_sample"/>
+                <ImageButton
+                    style="@style/arrowButton"
+                    android:id="@+id/buttonProductDetailArrowRight"
+                    android:gravity="right|center"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+            <TextView android:text="@string/app_detail_title"
+                android:id="@+id/labelDetailTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/mediumLabelLight"
+                android:gravity="center"
+                android:layout_weight=".9"/>
+            <TextView android:text="@string/app_detail_description"
+                android:id="@+id/labelDetailDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <TextView android:text="@string/app_detail_more_detail"
+                android:id="@+id/labelDetailMoreDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/mediumLabelLight"
+                android:gravity="center"
+                android:layout_weight=".9"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <TextView android:text="@string/app_browse_related"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/smallLabelDisabled"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <org.lucasr.twowayview.TwoWayView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/listViewStore"
+                style="@style/TwoWayView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawSelectorOnTop="false"
+                tools:context="com.totvs.retailapp.ProductDetailActivity"
+                android:layout_weight=".6"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/mediumButtonLight"
+                        android:layout_height="fill_parent"
+                        android:text="@string/app_previous"
+                        android:id="@+id/buttonProductDetailPrevious"/>
+                    <Button
+                        style="@style/mediumButtonLight"
+                        android:layout_height="fill_parent"
+                        android:text="@string/app_next"
+                        android:id="@+id/buttonProductDetailNext"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>

@@ -10,6 +10,51 @@
     tools:context="com.app.dadrix.yggdrasilbookapp.BookBrowseActivity"
     style="@style/linearLayoutLight">
 
+    <RelativeLayout
+        style="@style/headerSpecial">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:src="@drawable/book_cover_sample"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:src="@drawable/rectangle_frame_shadow"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:alpha=".80"/>
+        <TextView android:text="@string/app_books"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/largeLabelDark"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="gravity"
+            android:gravity="top|center"
+            android:layout_weight="1"/>
+        <TextView android:text="@string/app_browse_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/smallLabelDark"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="gravity"
+            android:gravity="bottom|center"
+            android:layout_weight="1"/>
+    </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </LinearLayout>
 
 </LinearLayout>

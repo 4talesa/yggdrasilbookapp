@@ -13,4 +13,11 @@
     <string name="app_events">Events</string>
     <string name="app_profile">Profile</string>
     <string name="app_profiles">Profiles</string>
+    <string name="app_browse_msg">Browse the options above</string>
+    <string name="app_browse_related">Related</string>
+    <string name="app_next">Next</string>
+    <string name="app_previous">Previous</string>
+    <string name="app_detail_title">Title</string>
+    <string name="app_detail_description">Description</string>
+    <string name="app_detail_more_detail">More detail</string>
 </resources>
