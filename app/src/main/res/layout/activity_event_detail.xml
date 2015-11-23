@@ -28,12 +28,12 @@
                 android:orientation="horizontal">
                 <ImageButton
                     style="@style/arrowButton"
-                    android:id="@+id/buttonProductDetailArrowLeft"
+                    android:id="@+id/buttonEventDetailArrowLeft"
                     android:gravity="left|center"
                     android:src="@drawable/arrow_left"/>
                 <ImageView
                     style="@style/pictureRegular"
-                    android:id="@+id/imageViewProductDetail"
+                    android:id="@+id/imageViewEventDetail"
                     android:gravity="center"
                     android:src="@drawable/event_cover_sample"/>
                 <ImageButton
@@ -43,21 +43,21 @@
                     android:src="@drawable/arrow_right"/>
             </LinearLayout>
             <TextView android:text="@string/app_detail_title"
-                android:id="@+id/labelDetailTitle"
+                android:id="@+id/labelEventDetailTitle"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/mediumLabelLight"
                 android:gravity="center"
                 android:layout_weight=".9"/>
             <TextView android:text="@string/app_detail_description"
-                android:id="@+id/labelDetailDescription"
+                android:id="@+id/labelEventDetailDescription"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/smallLabelLight"
                 android:gravity="center"
                 android:layout_weight="1"/>
             <TextView android:text="@string/app_detail_more_detail"
-                android:id="@+id/labelDetailMoreDetail"
+                android:id="@+id/labelEventDetailMoreDetail"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/mediumLabelLight"
@@ -78,12 +78,11 @@
             <org.lucasr.twowayview.TwoWayView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/listViewStore"
+                android:id="@+id/listViewEventDetail"
                 style="@style/TwoWayView"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:drawSelectorOnTop="false"
-                tools:context="com.totvs.retailapp.ProductDetailActivity"
                 android:layout_weight=".6"/>
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -100,12 +99,12 @@
                         style="@style/mediumButtonLight"
                         android:layout_height="fill_parent"
                         android:text="@string/app_previous"
-                        android:id="@+id/buttonProductDetailPrevious"/>
+                        android:id="@+id/buttonEventDetailPrevious"/>
                     <Button
                         style="@style/mediumButtonLight"
                         android:layout_height="fill_parent"
                         android:text="@string/app_next"
-                        android:id="@+id/buttonProductDetailNext"/>
+                        android:id="@+id/buttonEventDetailNext"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

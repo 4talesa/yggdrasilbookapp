@@ -18,7 +18,8 @@
             android:gravity="center"
             android:src="@drawable/event_cover_sample"
             android:layout_weight="1"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:id="@+id/imageViewEventBrowse"/>
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -54,7 +55,7 @@
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listView" />
+            android:id="@+id/listViewEventBrowse" />
     </LinearLayout>
 
 </LinearLayout>
