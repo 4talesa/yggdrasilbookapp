@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.dadrix.yggdrasilbookapp">
+    package="com.app.dadrix.yggdrasilbookapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_title"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,40 +22,52 @@
         </activity>
         <activity
             android:name=".BookBrowseActivity"
-            android:label="@string/app_books"/>
+            android:label="@string/app_books" />
         <activity
             android:name=".BookDetailActivity"
-            android:label="@string/app_book"/>
+            android:label="@string/app_book" />
         <activity
             android:name=".CharacterBrowseActivity"
-            android:label="@string/app_characters"/>
+            android:label="@string/app_characters" />
         <activity
             android:name=".CharacterDetailActivity"
-            android:label="@string/app_character"/>
+            android:label="@string/app_character" />
         <activity
             android:name=".PlaceBrowseActivity"
-            android:label="@string/app_places"/>
+            android:label="@string/app_places" />
         <activity
             android:name=".PlaceDetailActivity"
-            android:label="@string/app_place"/>
+            android:label="@string/app_place" />
         <activity
             android:name=".EventBrowseActivity"
-            android:label="@string/app_events"/>
+            android:label="@string/app_events" />
         <activity
             android:name=".EventDetailActivity"
-            android:label="@string/app_event"/>
+            android:label="@string/app_event" />
         <activity
             android:name=".SignInActivity"
-            android:label="@string/app_sign_in"/>
+            android:label="@string/app_sign_in" />
         <activity
             android:name=".SignUpActivity"
-            android:label="@string/app_sign_up"/>
+            android:label="@string/app_sign_up" />
         <activity
             android:name=".ProfileBrowseActivity"
-            android:label="@string/app_profiles"/>
+            android:label="@string/app_profiles" />
         <activity
             android:name=".ProfileDetailActivity"
-            android:label="@string/app_profile"/>
+            android:label="@string/app_profile" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_facebook_app_id" />
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1234"
+            android:exported="true" />
     </application>
 
 </manifest>

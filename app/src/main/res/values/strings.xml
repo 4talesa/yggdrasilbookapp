@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">YggdrasilBookApp</string>
     <string name="app_title">Yggdrasil</string>
+    <string name="app_parse_app_id">ApYcJ6UUoXaBOIS14LA2WGNUcIEZvuDQ4XwZiPbe</string>
+    <string name="app_parse_app_key">6wqaeFqato5XmC5vjO1PMLclxSuNPCEEIEdvZfOE</string>
+    <string name="app_facebook_app_id"></string>
     <string name="app_book">Book</string>
     <string name="app_books">Books</string>
     <string name="app_sign_in">Sign In</string>
