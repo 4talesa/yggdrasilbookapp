@@ -5,51 +5,51 @@
     <item
         android:id="@+id/book_detail_menu"
         android:orderInCategory="0"
-        android:title="@string/app_book"/>
+        android:title="@string/app_label_book"/>
     <item
         android:id="@+id/book_browse_menu"
         android:orderInCategory="1"
-        android:title="@string/app_books"/>
+        android:title="@string/app_label_books"/>
     <item
         android:id="@+id/sign_in_menu"
         android:orderInCategory="2"
-        android:title="@string/app_sign_in"/>
+        android:title="@string/app_label_sign_in"/>
     <item
         android:id="@+id/sign_up_menu"
         android:orderInCategory="3"
-        android:title="@string/app_sign_up"/>
+        android:title="@string/app_label_sign_up"/>
     <item
         android:id="@+id/place_detail_menu"
         android:orderInCategory="4"
-        android:title="@string/app_place"/>
+        android:title="@string/app_label_place"/>
     <item
         android:id="@+id/place_browse_menu"
         android:orderInCategory="5"
-        android:title="@string/app_places"/>
+        android:title="@string/app_label_places"/>
     <item
         android:id="@+id/character_browse_menu"
         android:orderInCategory="6"
-        android:title="@string/app_characters"/>
+        android:title="@string/app_label_characters"/>
     <item
         android:id="@+id/character_detail_menu"
         android:orderInCategory="7"
-        android:title="@string/app_character"/>
+        android:title="@string/app_label_character"/>
     <item
         android:id="@+id/event_detail_menu"
         android:orderInCategory="8"
-        android:title="@string/app_event"/>
+        android:title="@string/app_label_event"/>
     <item
         android:id="@+id/event_browse_menu"
         android:orderInCategory="9"
-        android:title="@string/app_events"/>
+        android:title="@string/app_label_events"/>
     <item
         android:id="@+id/profile_detail_menu"
         android:orderInCategory="10"
-        android:title="@string/app_profile"/>
+        android:title="@string/app_label_profile"/>
     <item
         android:id="@+id/profile_browse_menu"
         android:orderInCategory="11"
-        android:title="@string/app_profiles"/>
+        android:title="@string/app_label_profiles"/>
     <item android:id="@+id/action_search"
         android:orderInCategory="5"
         android:title="Search"

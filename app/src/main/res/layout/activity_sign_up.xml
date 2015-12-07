@@ -8,6 +8,125 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.app.dadrix.yggdrasilbookapp.SignUpActivity"
+    android:orientation="vertical"
     style="@style/linearLayoutLight">
+
+    <LinearLayout
+        style="@style/headerTitle">
+        <TextView android:text="@string/app_label_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/largeLabelLight"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/app_label_name"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/textViewsSignUpFullName"
+                android:text="@string/app_label_user_name"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="right|center"
+                android:layout_weight=".7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/app_label_email"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/textViewsSignUpEmail"
+                android:text="@string/app_label_user_email"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="right|center"
+                android:layout_weight=".7"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView android:text="@string/app_label_password"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/textViewsSignUpPassword"
+                android:text="@string/app_label_user_password"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="right|center"
+                android:layout_weight=".7"
+                android:password="true"
+                android:singleLine="true" />
+        </LinearLayout>
+        <Button
+            style="@style/mediumButtonLight"
+            android:layout_width="fill_parent"
+            android:text="@string/app_label_sign_up"
+            android:id="@+id/buttonSignUpAct"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                style="@style/largeButtonFacebook"
+                android:layout_width="fill_parent"
+                android:id="@+id/imageViewFacebookSignUp"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:src="@drawable/facebook_logo" />
+            <Button
+                android:text="@string/app_label_SignUp_with_in_with_facebook"
+                android:id="@+id/buttonFacebookSignUp"
+                style="@style/largeButtonFacebook"
+                android:layout_width="fill_parent"
+                android:gravity="right|center"
+                android:layout_weight=".7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView android:text="@string/app_label_or"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/smallLabelLight"
+                android:gravity="center"/>
+            <Button
+                style="@style/mediumButtonLight"
+                android:layout_width="fill_parent"
+                android:text="@string/app_label_sign_in"
+                android:id="@+id/buttonOrSignIn" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

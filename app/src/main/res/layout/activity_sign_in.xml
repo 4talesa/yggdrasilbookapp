@@ -8,6 +8,108 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.app.dadrix.yggdrasilbookapp.SignInActivity"
+    android:orientation="vertical"
     style="@style/linearLayoutLight">
+
+    <LinearLayout
+        style="@style/headerTitle">
+        <TextView android:text="@string/app_label_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorLabelLight"
+            android:textSize="@dimen/label_size_large"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/app_label_email"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/textViewsSignInEmail"
+                android:text="@string/app_label_user_email"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="right|center"
+                android:layout_weight=".7"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/app_label_password"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/textViewsSignInPassword"
+                android:text="@string/app_label_user_password"
+                android:layout_width="fill_parent"
+                style="@style/smallLabelLight"
+                android:gravity="right|center"
+                android:layout_weight=".7"
+                android:password="true"
+                android:singleLine="true" />
+        </LinearLayout>
+        <Button
+            style="@style/mediumButtonLight"
+            android:layout_width="fill_parent"
+            android:text="@string/app_label_sign_in"
+            android:id="@+id/buttonSignInAct" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                style="@style/largeButtonFacebook"
+                android:layout_width="fill_parent"
+                android:id="@+id/imageViewFacebookSignIn"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:src="@drawable/facebook_logo" />
+            <Button
+                android:text="@string/app_label_SignIn_with_in_with_facebook"
+                android:id="@+id/buttonFacebookSignIn"
+                style="@style/largeButtonFacebook"
+                android:layout_width="fill_parent"
+                android:gravity="right|center"
+                android:layout_weight=".7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView android:text="@string/app_label_or"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/smallLabelLight"
+                android:gravity="center"/>
+            <Button
+                style="@style/mediumButtonLight"
+                android:layout_width="fill_parent"
+                android:text="@string/app_label_sign_up"
+                android:id="@+id/buttonOrSignUp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

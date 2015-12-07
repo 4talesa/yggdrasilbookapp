@@ -1,8 +1,14 @@
 package com.app.dadrix.yggdrasilbookapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
@@ -18,6 +24,10 @@ import java.util.List;
 public class SignUpActivity extends YggdrasilBookActivity {
 
     public List<String> permissions;
+
+    TextView textViewsSignUpFullName;
+    TextView textViewsSignUpEmail;
+    TextView textViewsSignUpPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +58,7 @@ public class SignUpActivity extends YggdrasilBookActivity {
                 }
             }
         });
+        */
 
         textViewsSignUpFullName = (TextView) findViewById(R.id.textViewsSignUpFullName);
         textViewsSignUpEmail = (TextView) findViewById(R.id.textViewsSignUpEmail);
@@ -83,7 +94,7 @@ public class SignUpActivity extends YggdrasilBookActivity {
                     public void done(ParseException e) {
                         if (e == null) {
                             // Hooray! Let them use the app now.
-                            Intent it = new Intent(SignUpActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignUpActivity.this, BookBrowseActivity.class);
 
                             SignUpActivity.this.startActivity(it);
                         } else {
@@ -112,12 +123,12 @@ public class SignUpActivity extends YggdrasilBookActivity {
                             Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
                         } else if (user.isNew()) {
                             Log.d("MyApp", "User signed up and logged in through Facebook!");
-                            Intent it = new Intent(SignUpActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignUpActivity.this, BookBrowseActivity.class);
 
                             SignUpActivity.this.startActivity(it);
                         } else {
                             Log.d("MyApp", "User logged in through Facebook!");
-                            Intent it = new Intent(SignUpActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignUpActivity.this, BookBrowseActivity.class);
 
                             SignUpActivity.this.startActivity(it);
                         }
@@ -136,12 +147,12 @@ public class SignUpActivity extends YggdrasilBookActivity {
                             Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
                         } else if (user.isNew()) {
                             Log.d("MyApp", "User signed up and logged in through Facebook!");
-                            Intent it = new Intent(SignUpActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignUpActivity.this, BookBrowseActivity.class);
 
                             SignUpActivity.this.startActivity(it);
                         } else {
                             Log.d("MyApp", "User logged in through Facebook!");
-                            Intent it = new Intent(SignUpActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignUpActivity.this, BookBrowseActivity.class);
 
                             SignUpActivity.this.startActivity(it);
                         }
@@ -149,7 +160,7 @@ public class SignUpActivity extends YggdrasilBookActivity {
                 });
             }
         });
-         */
+
     }
 
     @Override

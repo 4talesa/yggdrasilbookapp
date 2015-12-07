@@ -28,7 +28,7 @@
             android:scaleType="fitCenter"
             android:layout_weight="1"
             android:alpha=".80"/>
-        <TextView android:text="@string/app_places"
+        <TextView android:text="@string/app_label_places"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             style="@style/largeLabelDark"
@@ -36,7 +36,7 @@
             android:textAlignment="gravity"
             android:gravity="top|center"
             android:layout_weight="1"/>
-        <TextView android:text="@string/app_browse_msg"
+        <TextView android:text="@string/app_label_browse_msg"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             style="@style/smallLabelDark"

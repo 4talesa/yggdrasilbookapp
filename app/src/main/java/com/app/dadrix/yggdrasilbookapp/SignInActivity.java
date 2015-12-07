@@ -1,8 +1,19 @@
 package com.app.dadrix.yggdrasilbookapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
@@ -12,12 +23,17 @@ import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SignInActivity extends YggdrasilBookActivity {
 
     public List<String> permissions;
+
+    TextView textViewsSignInEmail;
+    TextView textViewsSignInPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +65,8 @@ public class SignInActivity extends YggdrasilBookActivity {
             }
         });
 
+        */
+
         textViewsSignInEmail = (TextView) findViewById(R.id.textViewsSignInEmail);
         textViewsSignInPassword = (TextView) findViewById(R.id.textViewsSignInPassword);
 
@@ -74,7 +92,7 @@ public class SignInActivity extends YggdrasilBookActivity {
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
                             // Hooray! The user is logged in.
-                            Intent it = new Intent(SignInActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignInActivity.this, BookBrowseActivity.class);
 
                             SignInActivity.this.startActivity(it);
                         } else {
@@ -102,12 +120,12 @@ public class SignInActivity extends YggdrasilBookActivity {
                             Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
                         } else if (user.isNew()) {
                             Log.d("MyApp", "User signed up and logged in through Facebook!");
-                            Intent it = new Intent(SignInActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignInActivity.this, BookBrowseActivity.class);
 
                             SignInActivity.this.startActivity(it);
                         } else {
                             Log.d("MyApp", "User logged in through Facebook!");
-                            Intent it = new Intent(SignInActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignInActivity.this, BookBrowseActivity.class);
 
                             SignInActivity.this.startActivity(it);
                         }
@@ -126,12 +144,12 @@ public class SignInActivity extends YggdrasilBookActivity {
                             Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
                         } else if (user.isNew()) {
                             Log.d("MyApp", "User signed up and logged in through Facebook!");
-                            Intent it = new Intent(SignInActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignInActivity.this, BookBrowseActivity.class);
 
                             SignInActivity.this.startActivity(it);
                         } else {
                             Log.d("MyApp", "User logged in through Facebook!");
-                            Intent it = new Intent(SignInActivity.this, StoreBrowseActivity.class);
+                            Intent it = new Intent(SignInActivity.this, BookBrowseActivity.class);
 
                             SignInActivity.this.startActivity(it);
                         }
@@ -140,7 +158,6 @@ public class SignInActivity extends YggdrasilBookActivity {
             }
         });
 
-        */
     }
 
     @Override

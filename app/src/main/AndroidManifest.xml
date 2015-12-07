@@ -22,40 +22,40 @@
         </activity>
         <activity
             android:name=".BookBrowseActivity"
-            android:label="@string/app_books" />
+            android:label="@string/app_label_books" />
         <activity
             android:name=".BookDetailActivity"
-            android:label="@string/app_book" />
+            android:label="@string/app_label_book" />
         <activity
             android:name=".CharacterBrowseActivity"
-            android:label="@string/app_characters" />
+            android:label="@string/app_label_characters" />
         <activity
             android:name=".CharacterDetailActivity"
-            android:label="@string/app_character" />
+            android:label="@string/app_label_character" />
         <activity
             android:name=".PlaceBrowseActivity"
-            android:label="@string/app_places" />
+            android:label="@string/app_label_places" />
         <activity
             android:name=".PlaceDetailActivity"
-            android:label="@string/app_place" />
+            android:label="@string/app_label_place" />
         <activity
             android:name=".EventBrowseActivity"
-            android:label="@string/app_events" />
+            android:label="@string/app_label_events" />
         <activity
             android:name=".EventDetailActivity"
-            android:label="@string/app_event" />
+            android:label="@string/app_label_event" />
         <activity
             android:name=".SignInActivity"
-            android:label="@string/app_sign_in" />
+            android:label="@string/app_label_sign_in" />
         <activity
             android:name=".SignUpActivity"
-            android:label="@string/app_sign_up" />
+            android:label="@string/app_label_sign_up" />
         <activity
             android:name=".ProfileBrowseActivity"
-            android:label="@string/app_profiles" />
+            android:label="@string/app_label_profiles" />
         <activity
             android:name=".ProfileDetailActivity"
-            android:label="@string/app_profile" />
+            android:label="@string/app_label_profile" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_facebook_app_id" />

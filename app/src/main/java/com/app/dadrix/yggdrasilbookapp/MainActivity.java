@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             Log.d("KeyHash:", "Started");
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.totvs.retailapp",
+                    "com.app.dadrix.yggdrasilbookapp",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent it = new Intent(MainActivity.this, BookBrowseActivity.class);
+                Intent it = new Intent(MainActivity.this, SignInActivity.class);
 
                 MainActivity.this.startActivity(it);
             }

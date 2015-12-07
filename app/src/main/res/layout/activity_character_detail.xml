@@ -42,21 +42,21 @@
                     android:gravity="right|center"
                     android:src="@drawable/arrow_right"/>
             </LinearLayout>
-            <TextView android:text="@string/app_detail_title"
+            <TextView android:text="@string/app_label_detail_title"
                 android:id="@+id/labelCharacterDetailTitle"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/mediumLabelLight"
                 android:gravity="center"
                 android:layout_weight=".9"/>
-            <TextView android:text="@string/app_detail_description"
+            <TextView android:text="@string/app_label_detail_description"
                 android:id="@+id/labelCharacterDetailDescription"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/smallLabelLight"
                 android:gravity="center"
                 android:layout_weight="1"/>
-            <TextView android:text="@string/app_detail_more_detail"
+            <TextView android:text="@string/app_label_detail_more_detail"
                 android:id="@+id/labelCharacterDetailMoreDetail"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -69,7 +69,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.5"
             android:orientation="vertical">
-            <TextView android:text="@string/app_browse_related"
+            <TextView android:text="@string/app_label_browse_related"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 style="@style/smallLabelDisabled"
@@ -98,12 +98,12 @@
                     <Button
                         style="@style/mediumButtonLight"
                         android:layout_height="fill_parent"
-                        android:text="@string/app_previous"
+                        android:text="@string/app_label_previous"
                         android:id="@+id/buttonCharacterDetailPrevious"/>
                     <Button
                         style="@style/mediumButtonLight"
                         android:layout_height="fill_parent"
-                        android:text="@string/app_next"
+                        android:text="@string/app_label_next"
                         android:id="@+id/buttonCharacterDetailNext"/>
                 </LinearLayout>
             </LinearLayout>
